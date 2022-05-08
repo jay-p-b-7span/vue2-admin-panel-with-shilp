@@ -6,6 +6,9 @@ import store from "./store";
 import "./plugins/index";
 // All Styles
 import "./style/index.scss";
+
+// Global Components
+import "./global";
 Vue.config.productionTip = false;
 
 new Vue({

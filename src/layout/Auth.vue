@@ -16,7 +16,7 @@
     <div class="sign__right">
       <div class="sign__box">
         <a href="/">
-          <img src="/img/logo-dark.png" width="260px" alt />
+          <!-- <img src="/img/logo-dark.png" width="260px" alt /> -->
         </a>
 
         <slot />
@@ -64,17 +64,6 @@
               align="right"
               theme="link"
               :to="{ name: 'forgot-password' }"
-            />
-          </s-field>
-
-          <s-field inline v-if="action != 'help'" label="Having issues?">
-            <s-button
-              align="right"
-              icon="HelpCircle"
-              color="primary"
-              theme="link"
-              :to="{ name: 'help' }"
-              label="Get Help"
             />
           </s-field>
 

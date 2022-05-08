@@ -2,7 +2,6 @@ import Vue from "vue";
 
 Vue.component("ItemForm", require("@/components/form/ItemForm").default);
 Vue.component("Modal", require("@/components/Modal").default);
-Vue.component("StatusInput", require("@/components/StatusInput").default);
 
 /**
  * Auto Register Icons
