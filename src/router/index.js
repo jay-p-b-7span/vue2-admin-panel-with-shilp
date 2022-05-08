@@ -19,7 +19,7 @@ const routes = [
     children: privateRoutes,
   },
   {
-    path: "login",
+    path: "/login",
     name: "login",
     component: require("@/views/public/Login.vue").default,
   },

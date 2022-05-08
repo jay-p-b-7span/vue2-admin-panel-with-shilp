@@ -1,9 +1,15 @@
 <template>
-  <div></div>
+  <AuthLayout>
+    <div></div>
+  </AuthLayout>
 </template>
 
 <script>
-export default {};
+export default {
+  components: {
+    AuthLayout: require("@/layout/Auth.vue").default,
+  },
+};
 </script>
 
 <style></style>
