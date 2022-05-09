@@ -2,32 +2,35 @@
   <auth-layout>
     <template #default>
       <!-- Username -->
-      <item-form title="Login to Admin panel" :fields="fields" :save="save">
+      <item-form
+        title="Login to Admin panel"
+        :fields="fields"
+        :save="save"
+        :gap="2"
+      >
         <template #default="{ form }">
-          <div class="space-y-2 mb-3">
-            <!-- Username  -->
-            <s-field-validate rules="required" name="Username" label="Username">
-              <s-textbox
-                v-model="form.username"
-                type="text"
-                placeholder="Enter User Name"
-              />
-            </s-field-validate>
+          <!-- Username  -->
+          <s-field-validate rules="required" name="Username" label="Username">
+            <s-textbox
+              v-model="form.username"
+              type="text"
+              placeholder="Enter User Name"
+            />
+          </s-field-validate>
 
-            <!-- Password -->
-            <s-field-validate
-              rules="required"
-              name="Password"
-              :password-toggle="true"
-              label="Password"
-            >
-              <s-textbox
-                v-model="form.password"
-                type="password"
-                placeholder="Enter Password"
-              />
-            </s-field-validate>
-          </div>
+          <!-- Password -->
+          <s-field-validate
+            rules="required"
+            name="Password"
+            :password-toggle="true"
+            label="Password"
+          >
+            <s-textbox
+              v-model="form.password"
+              type="password"
+              placeholder="Enter Password"
+            />
+          </s-field-validate>
         </template>
 
         <template #footer="{ saveItem, saving }">
@@ -35,6 +38,7 @@
             <s-button
               class="flex-none text-center"
               align="center"
+              icon="IconMdiLogin"
               fluid
               color="primary"
               label="Login"
@@ -57,6 +61,11 @@ export default {
     return {
       fields: ["username", "password"],
     };
+  },
+  methods: {
+    save() {
+      // Axios post request comes here
+    },
   },
 };
 </script>

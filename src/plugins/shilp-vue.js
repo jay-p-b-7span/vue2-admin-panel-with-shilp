@@ -14,3 +14,5 @@ Vue.use(ListPlugin, listConfig);
 Vue.component("SFieldValidate", FieldValidate);
 Vue.component("SFormValidate", FormValidate);
 Vue.component("SpListTable", ListTable);
+
+require("shilp-vue/dist/shilp-vue.css");

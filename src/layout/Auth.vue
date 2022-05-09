@@ -1,24 +1,11 @@
 <template>
   <div class="sign">
     <div class="sign__left">
-      <h2>You're a step away from</h2>
-      <h2>taking your business</h2>
-      <h1>Online.</h1>
-      <ul>
-        <li>— Create business page</li>
-        <li>— Create a store & sell on WhatsApp</li>
-        <li>— Collect payments with popular payment gateways</li>
-        <li>— CRM & Customer support tools</li>
-        <li>— Create polls on WhatsApp</li>
-      </ul>
+      <img src="@/assets/logo.svg" alt="" width="400" height="auto" />
     </div>
 
     <div class="sign__right">
       <div class="sign__box">
-        <a href="/">
-          <!-- <img src="/img/logo-dark.png" width="260px" alt /> -->
-        </a>
-
         <slot />
 
         <div class="py-4 bt-lightest field-group g-3">
@@ -28,7 +15,7 @@
             label="Have an account?"
           >
             <s-button
-              icon="vmdi-login-variant"
+              icon="IconMdiLogin"
               align="right"
               color="warning"
               theme="link"
@@ -145,6 +132,7 @@ export default {
   .sign__left {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     overflow: hidden;
     padding: 20px;
