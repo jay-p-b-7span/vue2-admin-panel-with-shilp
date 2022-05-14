@@ -3,7 +3,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  mounted() {
+    this.$root.$emit("modal-open", "change-status");
+  },
+};
 </script>
 
 <style></style>
