@@ -13,14 +13,14 @@
       push-top
       full-height
       class="wh-layout"
-      top-size="70px"
+      top-size="50px"
       ref="mainContainer"
       :left-classlist="['br-lightest']"
       :top-classlist="['bb-lightest']"
       :right-classlist="['bl-lightest', 'p-0']"
     >
       <template #top>
-        <div class="page-header">
+        <div class="page-header h-full flex flex--middle flex--fit">
           <div class="page-header__content">
             <s-breadcrumbs class="flex__fluid" />
           </div>

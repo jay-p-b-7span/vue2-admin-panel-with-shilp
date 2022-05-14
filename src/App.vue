@@ -10,10 +10,6 @@
 </template>
 
 <script>
-export default {
-  mounted() {
-    document.title = "Admin Panel";
-  },
-};
+export default {};
 </script>
 <style lang="scss"></style>

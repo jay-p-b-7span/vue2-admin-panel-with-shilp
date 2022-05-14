@@ -9,7 +9,7 @@
         class="mr-2"
         :to="backRoute"
       />
-      <component :is="tag" class="text-p1-300">{{ title }}</component>
+      <component :is="tag" class="text-primary my-4">{{ title }}</component>
     </div>
     <div class="text-grey">
       <slot />

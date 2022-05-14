@@ -1,7 +1,7 @@
-// $shilp-fonts: (
-//   heading: "museo-sans",
-//   content: "museo-sans",
-// );
+$shilp-fonts: (
+  heading: "Outfit",
+  content: "Outfit",
+);
 
 // SPACES
 // Used for spacing values in margin, padding etc.
@@ -18,4 +18,115 @@ $shilp-spaces: (
   8: 32px,
   9: 36px,
   10: 40px,
+);
+
+$shilp-colors: (
+  "primary": (
+    lightest: "#EBEFFE",
+    lighter: "#ACBCFE",
+    light: "#637DFE",
+    default: "#304FFE",
+    dark: "#233BDA",
+    darker: "#182BB6",
+    darkest: "#091379",
+  ),
+  "orange": (
+    lightest: #fff3e0,
+    lighter: #ffe0b2,
+    light: #ffb74d,
+    default: #ff9800,
+    dark: #fb8c00,
+    darker: #ef6c00,
+    darkest: #e65100,
+  ),
+  "amber": (
+    lightest: #fff8e1,
+    lighter: #ffecb3,
+    light: #ffd54f,
+    default: #ffc107,
+    dark: #ffa000,
+    darker: #ff8f00,
+    darkest: #ff6f00,
+  ),
+  "lime": (
+    lightest: #f9fbe7,
+    lighter: #f0f4c3,
+    light: #dce775,
+    default: #cddc39,
+    dark: #afb42b,
+    darker: #9e9d24,
+    darkest: #827717,
+  ),
+  "green": (
+    lightest: #e8f5e9,
+    lighter: #c8e6c9,
+    light: #81c784,
+    default: #4caf50,
+    dark: #388e3c,
+    darker: #2e7d32,
+    darkest: #1b5e20,
+  ),
+  "cyan": (
+    lightest: #e0f7fa,
+    lighter: #b2ebf2,
+    light: #4dd0e1,
+    default: #00bcd4,
+    dark: #0097a7,
+    darker: #00838f,
+    darkest: #006064,
+  ),
+  "blue": (
+    lightest: #e3f2fd,
+    lighter: #bbdefb,
+    light: #64b5f6,
+    default: #2196f3,
+    dark: #1976d2,
+    darker: #1565c0,
+    darkest: #0d47a1,
+  ),
+  "indigo": (
+    lightest: #e8eaf6,
+    lighter: #c5cae9,
+    light: #7986cb,
+    default: #3f51b5,
+    dark: #303f9f,
+    darker: #283593,
+    darkest: #1a237e,
+  ),
+  "purple": (
+    lightest: #f3e5f5,
+    lighter: #e1bee7,
+    light: #ba68c8,
+    default: #9c27b0,
+    dark: #7b1fa2,
+    darker: #6a1b9a,
+    darkest: #4a148c,
+  ),
+  "pink": (
+    lightest: #fce4ec,
+    lighter: #f8bbd0,
+    light: #f06292,
+    default: #e91e63,
+    dark: #c2185b,
+    darker: #ad1457,
+    darkest: #880e4f,
+  ),
+  "red": (
+    lightest: #ffebee,
+    lighter: #ffcdd2,
+    light: #e57373,
+    default: #f44336,
+    dark: #d32f2f,
+    darker: #c62828,
+    darkest: #b71c1c,
+  ),
+  "brown": (
+    lightest: #efebe9,
+    lighter: #d7ccc8,
+    light: #bcaaa4,
+    default: #795548,
+    dark: #6d4c41,
+    darker: #5d4037,
+    darkest: #3e2723,
+  ),
 );

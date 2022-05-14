@@ -12,6 +12,7 @@ const routes = [
   {
     path: "/",
     name: "hydrate",
+    redirect: { name: "dashboard" },
     component: require("@/views/private/Hydrate.vue").default,
     meta: {
       public: false,
@@ -31,3 +32,21 @@ const router = new VueRouter({
 });
 
 export default router;
+
+router.beforeEach(async (to, from, next) => {
+  if (to.meta.public === true) {
+    next();
+  } else {
+    const token = localStorage.getItem("admin-token");
+    if (token) {
+      document.title =
+        to.meta && to.meta.label
+          ? to.meta.label + " | Admin Panel"
+          : "Admin Panel";
+
+      next();
+    } else {
+      next({ name: "login" });
+    }
+  }
+});

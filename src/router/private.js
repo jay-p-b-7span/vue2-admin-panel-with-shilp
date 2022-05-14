@@ -1,11 +1,3 @@
-export default [
-  {
-    path: "dashboard",
-    name: "dashboard",
-    // component: require().default,
-    meta: {
-      label: "Dashboard",
-      breadcrumbs: ["dashboard"],
-    },
-  },
-];
+import dashboard from "./dashboard";
+import setting from "./setting";
+export default [...dashboard, ...setting];

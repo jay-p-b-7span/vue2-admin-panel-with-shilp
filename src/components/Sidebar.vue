@@ -3,7 +3,7 @@
   <div class="sidebar-parent-div">
     <!-- Logo -->
     <div v-show="collapsed" class="p-4">
-      <img src="@/assets/small-logo.png" class="h-auto w-100" />
+      <img src="@/assets/small-logo.png" class="w-100" />
     </div>
     <div v-show="!collapsed" class="p-6">
       <img src="@/assets/logo.svg" width="150px" height="auto" />
@@ -12,7 +12,7 @@
     <!-- Nav -->
     <div class="sidebar-nav" :class="{ 'sidebar-nav--collapse': collapsed }">
       <s-button-group
-        size="md"
+        size="lg"
         align="left"
         :shape="collapsed ? 'square' : null"
       >
@@ -26,6 +26,18 @@
           class="mt-auto"
           icon="IconIcTwotoneAccountCircle"
           label="Account"
+        />
+
+        <s-button
+          icon="IconMdiCogOutline"
+          label="Settings"
+          :to="{ name: 'settings' }"
+        />
+
+        <s-button
+          icon="IconIcRoundLogOut"
+          label="Logout"
+          @click.native="logoutHandler"
         />
 
         <s-button
@@ -91,6 +103,7 @@ export default {
   overflow: auto;
   height: 100%;
 }
+
 .sidebar-nav {
   padding: 0 12px;
   margin-top: 12px;

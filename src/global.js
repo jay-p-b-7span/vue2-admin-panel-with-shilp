@@ -2,6 +2,7 @@ import Vue from "vue";
 
 Vue.component("ItemForm", require("@/components/form/ItemForm").default);
 Vue.component("Modal", require("@/components/Modal").default);
+Vue.component("SubNav", require("@/components/SubNav").default);
 
 /**
  * Auto Register Icons
