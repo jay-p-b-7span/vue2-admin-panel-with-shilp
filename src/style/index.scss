@@ -1,2 +1,11 @@
+@import "./shilp.scss";
 @import "shilp/scss/styles.scss";
 @import "~shilp-vue/dist/shilp-vue";
+
+.w-screen {
+  width: 100vw;
+}
+
+.h-screen {
+  height: 100vh;
+}

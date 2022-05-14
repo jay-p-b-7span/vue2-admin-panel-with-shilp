@@ -2,12 +2,7 @@
   <auth-layout>
     <template #default>
       <!-- Username -->
-      <item-form
-        title="Login to Admin panel"
-        :fields="fields"
-        :save="save"
-        :gap="2"
-      >
+      <item-form title="Login to Admin panel" :fields="fields" :gap="2">
         <template #default="{ form }">
           <!-- Username  -->
           <s-field-validate rules="required" name="Username" label="Username">
@@ -33,7 +28,7 @@
           </s-field-validate>
         </template>
 
-        <template #footer="{ saveItem, saving }">
+        <template #footer="{ saving }">
           <div class="footer-actions">
             <s-button
               class="flex-none text-center"
@@ -43,7 +38,7 @@
               color="primary"
               label="Login"
               :loader="saving"
-              @click.native="saveItem"
+              @click.native="goToDashboard"
             />
           </div>
         </template>
@@ -63,7 +58,9 @@ export default {
     };
   },
   methods: {
-    save() {
+    goToDashboard() {
+      localStorage.setItem("admin-token", "tokenvalue");
+      this.$router.push({ name: "hydrate" });
       // Axios post request comes here
     },
   },
