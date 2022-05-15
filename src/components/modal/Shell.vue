@@ -1,7 +1,10 @@
 <template>
   <div class="modal-shell" :class="`modal-shell--${size}`">
     <header class="modal-shell__header">
-      <p v-if="title" class="pl-4 flex flex--fit flex--middle font-medium">
+      <p
+        v-if="title"
+        class="pl-4 flex flex--fit flex--middle font-medium text-md"
+      >
         {{ title }}
       </p>
       <div class="flex-grow">
@@ -18,11 +21,7 @@
     </header>
 
     <!-- Loading -->
-    <div
-      v-if="loading"
-      v-shilp-loader="loading"
-      class="flex flex--fit flex--center flex--middle h-full py-24"
-    ></div>
+    <div v-if="loading" v-shilp-loader="loading" class="v__modal--loader"></div>
 
     <!-- Content -->
     <template v-else>
@@ -54,7 +53,10 @@ export default {
       type: Function,
       default: null,
     },
-    footer: Boolean,
+    footer: {
+      type: Boolean,
+      default: true,
+    },
     size: {
       type: String,
       default: "md",
@@ -79,7 +81,7 @@ export default {
 }
 .modal-shell__header {
   padding: 5px 10px;
-  height: 48px;
+  height: 50px;
   border-bottom: 2px solid var(--color--grey--lighter);
   display: flex;
   align-items: center;
@@ -117,9 +119,15 @@ export default {
 }
 
 .modal-shell__footer {
+  padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   border-top: 1px solid var(--color--grey--lighter);
+}
+
+.v__modal--loader {
+  text-align: center;
+  padding: 50px;
 }
 </style>

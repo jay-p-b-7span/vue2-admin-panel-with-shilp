@@ -5,7 +5,8 @@
 <script>
 export default {
   mounted() {
-    this.$root.$emit("modal-open", "change-status");
+    // Basic  Usage of Modal with data passing.
+    // this.$root.$emit("modal-open", "change-status", { status: "Inactive" });
   },
 };
 </script>
