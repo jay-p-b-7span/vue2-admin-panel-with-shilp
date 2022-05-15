@@ -208,24 +208,30 @@
           class="vp-list-paging flex flex--fit flex--nowrap flex--center divide-x"
         >
           <template #prev="{ prev, hasPrev }">
-            <button :disabled="!hasPrev" @click="prev()">
-              <s-icon name="IconMdiArrowLeft" />
-            </button>
+            <s-button
+              :disabled="!hasPrev"
+              @click="prev()"
+              icon="IconMdiArrowLeft"
+            >
+            </s-button>
           </template>
 
           <template #page="{ change, value, isActive }">
-            <button class="vp-bg-gray-100" v-if="isActive">
+            <s-button class="bg-grey-lightest" v-if="isActive">
               {{ value }}
-            </button>
-            <button v-else @click="change(value)">
+            </s-button>
+            <s-button v-else @click="change(value)">
               {{ value }}
-            </button>
+            </s-button>
           </template>
 
           <template #next="{ next, hasNext }">
-            <button :disabled="!hasNext" @click="next()">
-              <s-icon name="IconMdiArrowRight" />
-            </button>
+            <s-button
+              :disabled="!hasNext"
+              @click="next()"
+              icon="IconMdiArrowRight"
+            >
+            </s-button>
           </template>
         </VListPagination>
       </div>

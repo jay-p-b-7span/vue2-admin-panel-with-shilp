@@ -1,5 +1,5 @@
 <template>
-  <button
+  <s-button
     class="flex flex--fit flex--nowrap flex--middle flex--center cursor-pointer group"
     :class="{ 'w-12': !label, 'px-4': label }"
   >
@@ -17,7 +17,7 @@
     <span class="ml-2 text-grey-dark hover:text-grey-darker" v-if="label">
       {{ label }}
     </span>
-  </button>
+  </s-button>
 </template>
 
 <script>

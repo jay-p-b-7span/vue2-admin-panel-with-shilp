@@ -19,10 +19,10 @@ export default {
     return {
       columns: [
         { name: "_index", label: "#" },
-        "name",
+        { name: "name", type: "string" },
         { name: "brand_logo", label: "Brand Logo" },
-        "status",
-        "price",
+        { name: "status", type: "string" },
+        { name: "price", type: "number" },
         { name: "actions", rowClick: false },
       ],
     };

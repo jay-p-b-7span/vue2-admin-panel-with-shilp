@@ -14,7 +14,7 @@
           v-slot="{ attr, update }"
         >
           <label
-            class="flex flex--fit flex--nowrap flex--between flex--center py-2 cursor-pointer px-3 hover:bg-gray-100"
+            class="flex flex--fit flex--nowrap flex--between flex--center py-2 cursor-pointer px-3 hover:bg-grey-lightest"
             :key="`attr-${attr.name}`"
             :class="attr.visible ? 'text-gray-500' : 'text-gray-400'"
           >

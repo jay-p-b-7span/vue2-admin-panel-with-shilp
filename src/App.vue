@@ -5,6 +5,11 @@
 
     <router-view></router-view>
     <portal-target id="modal-container" name="modal-container" />
+    <PortalTarget
+      id="slideover-container"
+      name="slideover-container"
+      multiple
+    />
 
     <change-status-modal />
   </div>

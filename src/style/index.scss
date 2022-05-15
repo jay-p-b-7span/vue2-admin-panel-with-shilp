@@ -113,7 +113,7 @@ font-black {
 
 // Border Utilities
 .border-b {
-  border-bottom-width: 1px;
+  border-bottom: 1px solid var(--color--grey--lighter);
 }
 
 .z-10 {
@@ -183,10 +183,10 @@ divide-x > * + * {
 
 divide-y > * + * {
   border-top-width: 0px;
-  border-bottom-width: 1px;
+  border-bottom: 1px solid var(--color--grey--lighter);
 }
 .border-t {
-  border-top-width: 1px;
+  border-top: 1px solid var(--color--grey--lighter);
 }
 
 .animate-pulse {
@@ -203,7 +203,7 @@ divide-y > * + * {
   }
 }
 
-.hover\:text-grey-darker {
+.hover\:text-grey-darker:hover {
   color: var(--color--grey--darker);
 }
 
@@ -227,8 +227,12 @@ animate-ping {
   }
 }
 
-.hover\:bg-gray-100 {
+.hover\:bg-grey-lightest:hover {
   background: var(--color--grey--lightest);
+}
+
+.hover\:bg-grey-darker:hover {
+  background: var(--color--grey--darker);
 }
 
 .opacity-5 {
@@ -237,4 +241,27 @@ animate-ping {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.vp-transform {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.vp-transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }

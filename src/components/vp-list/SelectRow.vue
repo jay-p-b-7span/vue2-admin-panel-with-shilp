@@ -4,9 +4,11 @@
     :class="{ 'vpr-table-select--selected': state != 'none' }"
   >
     <p class="vpr-table-select__index">{{ index }}</p>
-    <button class="vpr-table-select__check">
-      <s-icon :name="$options.icons[state]" @click.native="$emit('change')" />
-    </button>
+    <s-button
+      class="vpr-table-select__check"
+      @click.native="$emit('change')"
+      :icon="$options.icons[state]"
+    />
   </div>
 </template>
 
