@@ -14,6 +14,10 @@
   width: 100%;
 }
 
+.w-52 {
+  width: 108px;
+}
+
 .h-full {
   width: 100%;
 }
@@ -97,4 +101,140 @@ font-black {
 
 .block {
   display: block;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0;
+}
+
+// Border Utilities
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+.bottom-0 {
+  bottom: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.right-4 {
+  right: 16px;
+}
+.items-stretch {
+  align-items: stretch;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
+.border-l {
+  border-left-width: 1px;
+}
+
+.h-12 {
+  height: 48px;
+}
+
+.outline-none {
+  outline: 0;
+}
+
+.focus\:ring-2:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+    var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+    calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+    var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\:ring-inset:focus {
+  --tw-ring-inset: inset;
+}
+
+.focus\:ring-grey-lighter {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: var(--color--grey--lighter);
+}
+
+divide-x > * + * {
+  border-right-width: 1px;
+  border-left-width: 0px;
+}
+
+divide-y > * + * {
+  border-top-width: 0px;
+  border-bottom-width: 1px;
+}
+.border-t {
+  border-top-width: 1px;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.hover\:text-grey-darker {
+  color: var(--color--grey--darker);
+}
+
+.rounded-full {
+  border-radius: 999999px;
+}
+
+.rounded-md {
+  border-radius: 6px;
+}
+
+animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.hover\:bg-gray-100 {
+  background: var(--color--grey--lightest);
+}
+
+.opacity-5 {
+  opacity: 0.05;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
