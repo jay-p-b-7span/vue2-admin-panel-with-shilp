@@ -20,7 +20,7 @@ export default {
       columns: [
         { name: "_index", label: "#" },
         { name: "name", type: "string" },
-        { name: "brand_logo", label: "Brand Logo" },
+        { name: "brand_logo", label: "Brand Logo", fix: true },
         { name: "status", type: "string" },
         { name: "price", type: "number" },
         { name: "actions", rowClick: false },
