@@ -23,7 +23,6 @@ export default {
   mounted() {
     var r = document.querySelector(":root");
     var rs = getComputedStyle(r);
-    console.log(rs);
   },
   watch: {
     "colors.primary"(newValue) {

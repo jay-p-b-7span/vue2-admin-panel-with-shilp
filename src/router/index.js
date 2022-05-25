@@ -22,6 +22,9 @@ const routes = [
   {
     path: "/login",
     name: "login",
+    meta: {
+      public: true,
+    },
     component: require("@/views/public/Login.vue").default,
   },
 ];
@@ -30,8 +33,6 @@ const router = new VueRouter({
   mode: "history",
   routes,
 });
-
-export default router;
 
 router.beforeEach(async (to, from, next) => {
   if (to.meta.public === true) {
@@ -43,10 +44,11 @@ router.beforeEach(async (to, from, next) => {
         to.meta && to.meta.label
           ? to.meta.label + " | Admin Panel"
           : "Admin Panel";
-
       next();
     } else {
       next({ name: "login" });
     }
   }
 });
+
+export default router;

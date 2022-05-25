@@ -1,14 +1,18 @@
 <template>
   <s-button
-    class="flex flex--fit flex--nowrap flex--middle flex--center cursor-pointer group"
-    :class="{ 'w-12': !label, 'px-4': label }"
+    :icon="icon"
+    theme="outline"
+    color="grey"
+    shape="square"
+    class="flex flex--fit flex--nowrap flex--middle flex--center cursor-pointer h-full"
+    :class="{
+      'w-12': !label,
+      'px-4': label,
+      'text-warning-400': ping,
+      'text-gray-400': !ping,
+    }"
   >
     <span class="block relative">
-      <s-icon
-        class="w-5 h-5 hover:text-grey-darker relative z-10"
-        :class="{ 'text-warning-400': ping, 'text-gray-400': !ping }"
-        :name="icon"
-      />
       <span
         v-if="ping"
         class="w-full h-full rounded-full bg-warning-light animate-ping absolute left-0 top-0"

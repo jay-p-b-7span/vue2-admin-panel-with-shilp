@@ -10,7 +10,7 @@ export default [
         name: "color",
         component: require("@/views/private/settings/theme/Colors").default,
         meta: {
-          label: "colors",
+          label: "Colors",
           breadcrumbs: ["dashboard", "settings", "theme", "color"],
         },
       },

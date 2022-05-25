@@ -25,8 +25,10 @@
         <!--  -->
         <div v-else class="flex flex--stretch flex--nowrap flex--fit h-12">
           <!-- TITLE -->
-          <div class="pl-4 pr-6 flex items-center justify-center h-12">
-            <p class="font-bold leading-none">{{ title }}</p>
+          <div
+            class="pl-4 pr-6 flex items-center justify-center h-12 flex--nowrap flex--fit"
+          >
+            <p class="font-bold leading-none text-md">{{ title }}</p>
             <p class="leading-none text-grey ml-1">
               ({{ response && response.count }})
             </p>
@@ -49,21 +51,22 @@
             :class="!search ? 'hidden' : ''"
             v-slot="{ value, set }"
           >
-            <input
-              class="w-full h-12 px-4 outline-none focus:ring-2 focus:ring-inset focus:ring-grey-lighter"
-              placeholder="Search"
-              type="text"
-              :value="value"
-              @input="set($event.target.value)"
-            />
-            <s-icon
-              class="w-6 h-6 absolute right-4 top-0 bottom-0 my-auto text-grey-light"
-              name="IconMdiMagnify"
-            />
+            <s-field afterIcon="IconMdiMagnify" class="h-12">
+              <s-textbox
+                class="w-full px-4 outline-none focus:ring-2 focus:ring-inset focus:ring-grey-lighter"
+                placeholder="Search"
+                type="text"
+                :value="value"
+                @input="set($event.target.value)"
+              />
+            </s-field>
           </VListSearch>
 
           <!-- Action Buttons -->
-          <div class="divide-x flex" :class="!search ? 'border-l ml-auto' : ''">
+          <div
+            class="flex flex--fit"
+            :class="!search ? 'border-l ml-auto' : ''"
+          >
             <HeaderButton icon="IconMdiRefresh" @click.native="refresh()" />
             <HeaderButton
               v-if="filters"
@@ -211,9 +214,10 @@
             <s-button
               :disabled="!hasPrev"
               @click="prev()"
+              theme="outline"
+              color="grey"
               icon="IconMdiArrowLeft"
-            >
-            </s-button>
+            />
           </template>
 
           <template #page="{ change, value, isActive }">
@@ -227,11 +231,12 @@
 
           <template #next="{ next, hasNext }">
             <s-button
+              theme="outline"
+              color="grey"
               :disabled="!hasNext"
               @click="next()"
               icon="IconMdiArrowRight"
-            >
-            </s-button>
+            />
           </template>
         </VListPagination>
       </div>
@@ -368,30 +373,30 @@ export default {
 </script>
 
 <style lang="scss">
-.vp-list-paging {
-  button {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-weight: 700;
-    color: var(--color--grey);
-  }
+// .vp-list-paging {
+// button {
+//   width: 40px;
+//   height: 40px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   font-weight: 700;
+//   color: var(--color--grey);
+// }
 
-  button {
-    outline: none !important;
-    &:hover {
-      background: var(--color--grey--lightest);
-    }
+// button {
+//   outline: none !important;
+//   &:hover {
+//     background: var(--color--grey--lightest);
+//   }
 
-    &:disabled {
-      cursor: not-allowed;
-      opacity: 0.5;
-    }
-  }
-}
+//   &:disabled {
+//     cursor: not-allowed;
+//     opacity: 0.5;
+//   }
+// }
+// }
 
 .vpr-table {
   width: 100%;

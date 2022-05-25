@@ -1,31 +1,13 @@
 <template>
   <div>
-    <vp-list
-      :per-page="10"
-      :filters="{}"
-      :columns="columns"
-      endpoint="products"
-      :search="false"
-      ref="list"
-      title="Products"
-    ></vp-list>
-    <!-- class="h-100 grid-cols-10 col-start-4 w-screen" -->
+    <h2>Dashboard Index</h2>
   </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {
-      columns: [
-        { name: "_index", label: "#" },
-        { name: "name", type: "string" },
-        { name: "brand_logo", label: "Brand Logo" },
-        { name: "status", type: "string" },
-        { name: "price", type: "number" },
-        { name: "actions", rowClick: false },
-      ],
-    };
+    return {};
   },
   mounted() {
     // Basic  Usage of Modal with data passing.
