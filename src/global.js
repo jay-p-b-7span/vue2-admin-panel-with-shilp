@@ -6,6 +6,9 @@ Vue.component("Modal", require("@/components/Modal").default);
 Vue.component("SubNav", require("@/components/SubNav").default);
 Vue.component("VpList", require("@/components/vp-list/Index").default);
 Vue.component("Slideover", require("@/components/slideover/Index").default);
+Vue.component("Badge", require("@/components/Badge").default);
+Vue.component("Icon", require("@/components/Icon").default);
+Vue.component("NoDataFound", require("@/components/NoDataFound").default);
 
 /**
  * Auto Register Icons

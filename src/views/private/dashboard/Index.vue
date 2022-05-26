@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <h2>Dashboard Index</h2>
+  <div
+    class="w-full h-full flex flex--middle flex--center flex--fit flex--nowrap"
+  >
+    <no-data-found />
   </div>
 </template>
 
