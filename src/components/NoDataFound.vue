@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-center">
     <div class="error-page__icon-3">
       <div class="error-page__icon-2">
         <div class="error-page__icon-1">
@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <span class="block text-lg mt-3">No Data Found!</span>
+    <span class="block text-lg mt-3 text-bold">No Data Found!</span>
   </div>
 </template>
 
@@ -37,6 +37,8 @@ export default {};
 }
 
 .error-page__icon {
+  border-radius: 50%;
+  background-color: var(--color--primary);
   padding: 20px;
 }
 
