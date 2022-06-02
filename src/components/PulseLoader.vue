@@ -1,5 +1,5 @@
 <template>
-  <div class="loader-container">
+  <div class="loader-container" id="pulse-loader">
     <div
       class="loader-child first-child"
       :class="`pulse-loader--${color} w-${size} h-${size}`"

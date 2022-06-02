@@ -4,7 +4,21 @@
   >
     <!-- <no-data-found /> -->
 
-    <div id="loader-container" v-pulse-loader="true">HELLLO</div>
+    <div
+      id="loader-container"
+      v-pulse-loader="{
+        overlay: true,
+        isVisible: isPulseLoaderVisible,
+      }"
+    >
+      HELLLO
+    </div>
+
+    <s-button
+      label="Toggle PulseLoader"
+      color="primary"
+      @click.native="isPulseLoaderVisible = !isPulseLoaderVisible"
+    />
 
     <!-- <pulse-loader /> -->
   </div>
@@ -14,7 +28,9 @@
 export default {
   components: {},
   data() {
-    return {};
+    return {
+      isPulseLoaderVisible: false,
+    };
   },
   mounted() {
     // Basic  Usage of Modal with data passing.
