@@ -2,12 +2,17 @@
   <div
     class="w-full h-full flex flex--middle flex--center flex--fit flex--nowrap"
   >
-    <no-data-found />
+    <!-- <no-data-found /> -->
+
+    <div id="loader-container" v-pulse-loader="true">HELLLO</div>
+
+    <!-- <pulse-loader /> -->
   </div>
 </template>
 
 <script>
 export default {
+  components: {},
   data() {
     return {};
   },

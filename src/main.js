@@ -11,6 +11,8 @@ import "./style/index.scss";
 import "./global";
 Vue.config.productionTip = false;
 
+// Custom Directives
+import "@/directives/index";
 new Vue({
   router,
   store,

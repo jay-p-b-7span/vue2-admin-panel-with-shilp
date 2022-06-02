@@ -9,6 +9,7 @@ Vue.component("Slideover", require("@/components/slideover/Index").default);
 Vue.component("Badge", require("@/components/Badge").default);
 Vue.component("Icon", require("@/components/Icon").default);
 Vue.component("NoDataFound", require("@/components/NoDataFound").default);
+Vue.component("PulseLoader", require("@/components/PulseLoader").default);
 
 /**
  * Auto Register Icons
