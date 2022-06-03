@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="w-full h-full flex flex--middle flex--center flex--fit flex--nowrap"
-  >
+  <div class="flex flex--fit flex--column g-4 flex--middle h-full flex--center">
     <!-- <no-data-found /> -->
 
     <div
@@ -14,11 +12,11 @@
       HELLLO
     </div>
 
-    <s-button
+    <!-- <s-button
       label="Toggle PulseLoader"
       color="primary"
       @click.native="isPulseLoaderVisible = !isPulseLoaderVisible"
-    />
+    /> -->
 
     <!-- <pulse-loader /> -->
   </div>
