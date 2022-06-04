@@ -37,7 +37,8 @@ export default {
 
 <style lang="scss">
 .loader-container {
-  position: relative;
+  position: absolute;
+  z-index: 3;
 
   .loader-child {
     display: inline-block;

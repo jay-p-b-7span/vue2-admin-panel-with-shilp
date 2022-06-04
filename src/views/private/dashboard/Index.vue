@@ -5,11 +5,21 @@
     <div
       id="loader-container"
       v-pulse-loader="{
-        overlay: true,
         isVisible: isPulseLoaderVisible,
+        color: 'success',
+        overlay: true,
       }"
     >
-      HELLLO
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis explicabo
+      accusantium odio iste molestias numquam expedita quas libero eligendi modi
+      fugit voluptate, sapiente quisquam consequuntur totam dolorum itaque cum
+      esse? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+      explicabo accusantium odio iste molestias numquam expedita quas libero
+      eligendi modi fugit voluptate, sapiente quisquam consequuntur totam
+      dolorum itaque cum esse?Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Quis explicabo accusantium odio iste molestias numquam expedita quas
+      libero eligendi modi fugit voluptate, sapiente quisquam consequuntur totam
+      dolorum itaque cum esse?
     </div>
 
     <!-- <s-button
