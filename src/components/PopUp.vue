@@ -1,5 +1,5 @@
 <template>
-  <div>Pop Up Added</div>
+  <div>Pop Up Added Second Time</div>
 </template>
 
 <script>
