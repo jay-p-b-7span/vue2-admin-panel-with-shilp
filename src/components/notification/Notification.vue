@@ -1,5 +1,5 @@
 <template>
-  <div>Notification Component</div>
+  <div>Notification Component Updated Code</div>
 </template>
 
 <script>
